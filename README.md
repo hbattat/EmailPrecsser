@@ -6,7 +6,7 @@ THE NAME:
 EmailPrecss means email preparation of CSS
 
 WHY?
-Most if not all email clients and companies stip out some HTML elements from an HTML email for security reasons, in many cases no <script>, <style> or <head> tags will be left in the email. So to keep the look and the style of the email HTML you have to generate an HTML code with inline CSS. For example:
+Most if not all email clients and companies stip out some HTML elements from an HTML email for security reasons, in many cases no script, style or head tags will be left in the email. So to keep the look and the style of the email HTML you have to generate an HTML code with inline CSS. For example:
 instead of
 ```html
 <html>
