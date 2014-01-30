@@ -3,9 +3,11 @@ EmailPrecsser
 is a php class to prepare the HTML for an HTML email or just make all CSS blocks and stylesheets to be inline (why would you do that other than for an HTML email?) The class uses a CSS parser called csstidy and a HTML dom parser called ganon.
 
 THE NAME:
+
 EmailPrecss means email preparation of CSS
 
 WHY?
+
 Most if not all email clients and companies stip out some HTML elements from an HTML email for security reasons, in many cases no script, style or head tags will be left in the email. So to keep the look and the style of the email HTML you have to generate an HTML code with inline CSS. For example:
 instead of
 ```html
@@ -42,9 +44,11 @@ you would have to use something like:
 ```
 
 HOW CAN YOU AUTOMATICALLY GENERATE THAT?
+
 Using EmailPrecsser, you can convert the first code to the second.
 
 ALREADY THERE:
+
 I am aware of many other libraries and classes that do the same thing, but for one of my projects I could not find any simple solution using those tools. Many tools seem to be very comlicated and hard to include in my scripts. EmailPrecsser should be easily included and gives some useful options to include HTML as string or from a URL. Same for the CSS.
 
 
@@ -65,8 +69,6 @@ Example 1:
 ----------
 Convert html string with no external css
 ```php
-//Example 1: convert html string with no external css
-/***************************************************/
 //html to be converted
 $html = <<<HTML
 <html>
@@ -159,7 +161,9 @@ Simple_html_dom parser has the same issue when it comes to multiple classes elem
 Credits:
 ========
 ganon HTML DOM parser http://code.google.com/p/ganon
+
 csstidy CSS parser http://csstidy.sourceforge.net
+
 
 Special thanks to Tim Wright for his help with regex patterns https://github.com/spartas
 
