@@ -111,27 +111,4 @@ class EmailPrecsser{
 		return preg_match('|^http(s)?://[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(/.*)?$|i', $url);
   }
 }
-
-/*
-			foreach($css as $selector=>$rules){
-				$selector_pieces = preg_split('/\s+/', $selector);
-				for($i = 0; $i < count($selector_pieces); $i++){
-					preg_match_all("/((?:\w)*)((?:\.[-0-9a-zA-Z]+){2,})/i", $selector_pieces[$i], $matches);
-					if(!empty($matches[2])){
-						for($j = 0; $j < count($matches[2]); $j++){
-							$rewrites[$i] = $matches[1][$j].'[class=\''.trim(str_replace('.', ' ', $matches[2][$j])).'\']';
-						}
-					}
-					else{
-						$rewrites[$i] = $selector_pieces[$i];
-					}
-				}
-				$selector_str = implode(" ", $rewrites);
-				foreach($html($selector_str) as $element){
-					foreach($rules as $name=>$value){
-						$element->style .= $name.': '.$value.'; ';
-					}
-				}
-			}
-*/
 ?>
